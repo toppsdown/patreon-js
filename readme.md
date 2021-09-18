@@ -170,7 +170,7 @@ For instance, if you wanted to request the total amount a patron has ever paid t
 which is not included by default, you could do:
 ```js
 const { patreon, jsonApiURL } = require('patreon')
-const pledge_schema = require('patreon/schemas/pledge')
+const pledge_schema = require('patreon/dist/schemas/pledge')
 
 const patreonAPIClient = patreon(access_token)
 const url = jsonApiURL(`/current_user`, {
